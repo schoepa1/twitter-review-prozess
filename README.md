@@ -1,4 +1,6 @@
 Björn Scheppler, 12.9.2018
+Patrick Schönenberger, 07.10.2018
+
 
 # Twitter-Review-Prozess (twitter-review-prozess)
 Dieses Maven-Projekt dient den Studierenden des Moduls Geschäftsprozessintegration, um Schritt für Schritt eine Prozessapplikation zu erstellen. Im Endausbau enthalten sind folgende Funktionalitäten:
