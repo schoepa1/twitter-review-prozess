@@ -33,7 +33,12 @@ public class NotifyEmployeeDelegate implements JavaDelegate{
         
         // Die E-Mail-Nachricht zusammenbauen
         String mailHauptteil;
-        if(checkResult.equals("rejected")){
+        
+        // If the timer event was executed during the process mailMainPart will have a value
+        Object mailMainPart = execution.getVariable("mailMainPart");
+        if(mailMainPart instanceof String){
+             mailHauptteil = (String) mailMainPart;
+        } else if(checkResult.equals("rejected")){
             mailHauptteil = "Leider wurde diese Tweet-Anfrage abgelehnt mit " +
                     "folgender Begründung:\n" + checkResultComment;
         } else {
